@@ -213,6 +213,17 @@ CLASS_NAMES = ["Normal", "Pneumonia", "Tuberculosis", "COVID"]
 # --------------------------
 # Routes
 # --------------------------
+@app.route("/", methods=["GET"])
+def index():
+    return jsonify({
+        "message": "Lung Disease Classification API is running!",
+        "endpoints": {
+            "health": "/health",
+            "predict": "/predict (POST)"
+        }
+    })
+
+
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({

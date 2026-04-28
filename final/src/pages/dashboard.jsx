@@ -42,7 +42,7 @@ export default function Dashboard() {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://127.0.0.1:5000/predict", formData, {
+      const res = await axios.post("https://multiple-lung-diseases-classification-1.onrender.com/predict", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
@@ -81,7 +81,7 @@ export default function Dashboard() {
         lime_image: limeImage
       };
 
-      const res = await axios.post("http://127.0.0.1:5000/chatbot", payload, {
+      const res = await axios.post("https://multiple-lung-diseases-classification-1.onrender.com/chatbot", payload, {
         headers: { "Content-Type": "application/json" },
       });
 
@@ -188,7 +188,7 @@ export default function Dashboard() {
                 <small>Quick preview:</small>
                 <div>
                   <img
-                    src={`http://127.0.0.1:5000/uploads/${limeImage}`}
+                    src={`https://multiple-lung-diseases-classification-1.onrender.com/uploads/${limeImage}`}
                     alt="lime preview"
                     style={{ maxWidth: 360, borderRadius: 8, border: "1px solid #ddd" }}
                   />
@@ -291,7 +291,7 @@ export default function Dashboard() {
             <div style={{ marginTop: 12 }}>
               <h4>LIME Heatmap</h4>
               {limeImage ? (
-                <img src={`http://127.0.0.1:5000/uploads/${limeImage}`} alt="LIME heatmap" style={{ width: "100%", borderRadius: 8, border: "1px solid #ddd" }} />
+                <img src={`https://multiple-lung-diseases-classification-1.onrender.com/uploads/${limeImage}`} alt="LIME heatmap" style={{ width: "100%", borderRadius: 8, border: "1px solid #ddd" }} />
               ) : (
                 <p>No heatmap generated yet.</p>
               )}
