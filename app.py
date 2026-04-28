@@ -158,20 +158,11 @@ IMG_SIZE = (224, 224)
 # --------------------------
 # Flask app
 # --------------------------
-app = Flask(__name__, static_folder="final/dist", static_url_path="/")
+app = Flask(__name__)
 CORS(app)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
-# --------------------------
-# Serve React Frontend
-# --------------------------
-@app.route("/")
-def serve():
-    return send_from_directory(app.static_folder, "index.html")
-
-@app.route("/<path:path>")
-def static_files(path):
-    return send_from_directory(app.static_folder, path)
+# API Routes start here
 
 # --------------------------
 # Helper functions
