@@ -15,14 +15,15 @@ __pycache__/
 
 # Machine Learning Models (Large files)
 *.h5
-*.keras
+# *.keras
 *.hdf5
 *.pb
 saved_model/
 
 # Application Specific Directories
 uploads/
-lung_outputs/
+# lung_outputs/
+!lung_outputs/best_model.keras
 LungXRays-grayscale/
 
 # OS generated files
