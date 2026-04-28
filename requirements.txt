@@ -1,6 +1,6 @@
 flask
 gunicorn
-tensorflow
+tensorflow-cpu==2.15.0
+pillow
 numpy
-pandas
-scikit-learn
+flask-cors
