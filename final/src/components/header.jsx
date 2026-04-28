@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, Link, useLocation } from "react-router-dom";
-import LoginModal from "../components/LoginModal"; 
+import LoginModal from "./loginmodal"; 
 import { auth } from "../firebaseConfig";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 
