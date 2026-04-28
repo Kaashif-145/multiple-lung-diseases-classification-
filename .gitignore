@@ -1,0 +1,36 @@
+# Python environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Machine Learning Models (Large files)
+*.h5
+*.keras
+*.hdf5
+*.pb
+saved_model/
+
+# Application Specific Directories
+uploads/
+lung_outputs/
+final/
+LungXRays-grayscale/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
